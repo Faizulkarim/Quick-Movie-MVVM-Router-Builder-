@@ -29,7 +29,7 @@ iOS 14.0+
 Swift 5.0+
 
 ## Install/Build Notes
-* Clone repo  "git clone https://github.com/your-username/quick-movie.git"
+* Clone repo  "git clone https://github.com/Faizulkarim/Quick-Movie-MVVM-Router-Builder-.git)"
 * Install pods (`pod install`)
 
 Run the app on your simulator or device.
