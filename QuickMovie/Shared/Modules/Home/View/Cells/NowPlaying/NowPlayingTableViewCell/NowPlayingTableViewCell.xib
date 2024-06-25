@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="NowPlayingTableViewCell" customModule="QuickMovie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3aS-xD-OMd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ej7-Zn-qAj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mWZ-zl-1FW">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ej7-Zn-qAj" secondAttribute="trailing" id="AWn-q3-SGb"/>
+                            <constraint firstItem="Ej7-Zn-qAj" firstAttribute="top" secondItem="3aS-xD-OMd" secondAttribute="top" id="FpK-w4-A3s"/>
+                            <constraint firstItem="Ej7-Zn-qAj" firstAttribute="leading" secondItem="3aS-xD-OMd" secondAttribute="leading" id="Hzh-fZ-0p4"/>
+                            <constraint firstAttribute="bottom" secondItem="Ej7-Zn-qAj" secondAttribute="bottom" id="Ial-pl-hsx"/>
+                            <constraint firstAttribute="height" constant="200" id="iaq-cv-GpL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="3aS-xD-OMd" secondAttribute="trailing" id="3BB-qM-71B"/>
+                    <constraint firstItem="3aS-xD-OMd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Yea-oc-15Y"/>
+                    <constraint firstAttribute="bottom" secondItem="3aS-xD-OMd" secondAttribute="bottom" id="m7d-AP-rhP"/>
+                    <constraint firstItem="3aS-xD-OMd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nzf-kG-AbR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="baseView" destination="3aS-xD-OMd" id="XIT-nR-TO4"/>
+                <outlet property="nowPlayingCollectionView" destination="Ej7-Zn-qAj" id="mdm-vF-41A"/>
+            </connections>
+            <point key="canvasLocation" x="56.488549618320612" y="19.718309859154932"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

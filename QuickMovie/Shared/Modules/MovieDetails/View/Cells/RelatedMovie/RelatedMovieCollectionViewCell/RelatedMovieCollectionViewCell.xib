@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RelatedMovieCollectionViewCell" customModule="QuickMovie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MWl-gk-nvz">
+                        <rect key="frame" x="5" y="5" width="140" height="190"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kth-oe-q3C">
+                                <rect key="frame" x="0.0" y="0.0" width="140" height="136.33333333333334"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="beF-2i-fnn">
+                                <rect key="frame" x="5" y="141.33333333333334" width="130" height="48.666666666666657"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMe-Re-xmS">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7k-6O-Xqu">
+                                        <rect key="frame" x="0.0" y="28.333333333333314" width="130" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="PrimaryBlack"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="beF-2i-fnn" secondAttribute="trailing" constant="5" id="K22-8R-W8i"/>
+                            <constraint firstItem="kth-oe-q3C" firstAttribute="top" secondItem="MWl-gk-nvz" secondAttribute="top" id="RNP-u5-cIe"/>
+                            <constraint firstItem="beF-2i-fnn" firstAttribute="top" secondItem="kth-oe-q3C" secondAttribute="bottom" constant="5" id="ST6-lX-uBC"/>
+                            <constraint firstAttribute="trailing" secondItem="kth-oe-q3C" secondAttribute="trailing" id="hDb-ia-iLV"/>
+                            <constraint firstItem="beF-2i-fnn" firstAttribute="centerX" secondItem="MWl-gk-nvz" secondAttribute="centerX" id="uj5-dA-rSg"/>
+                            <constraint firstItem="beF-2i-fnn" firstAttribute="leading" secondItem="MWl-gk-nvz" secondAttribute="leading" constant="5" id="wlY-T8-tTb"/>
+                            <constraint firstItem="kth-oe-q3C" firstAttribute="leading" secondItem="MWl-gk-nvz" secondAttribute="leading" id="x4Z-ot-lof"/>
+                            <constraint firstAttribute="bottom" secondItem="beF-2i-fnn" secondAttribute="bottom" id="zN2-Yd-nQd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="MWl-gk-nvz" secondAttribute="trailing" constant="5" id="4g6-Ko-eob"/>
+                <constraint firstAttribute="bottom" secondItem="MWl-gk-nvz" secondAttribute="bottom" constant="5" id="NZv-Ib-pO7"/>
+                <constraint firstItem="MWl-gk-nvz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="UUd-cU-en7"/>
+                <constraint firstItem="MWl-gk-nvz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="q7R-Ci-J0F"/>
+            </constraints>
+            <connections>
+                <outlet property="baseView" destination="MWl-gk-nvz" id="Hos-0j-SWe"/>
+                <outlet property="name" destination="xMe-Re-xmS" id="ZcH-0B-BCn"/>
+                <outlet property="popularity" destination="w7k-6O-Xqu" id="hZa-tf-Agx"/>
+                <outlet property="posterImage" destination="kth-oe-q3C" id="zv5-C5-5fd"/>
+            </connections>
+            <point key="canvasLocation" x="18.320610687022899" y="20.422535211267608"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="PrimaryBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

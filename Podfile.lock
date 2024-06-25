@@ -1,0 +1,28 @@
+PODS:
+  - Cosmos (23.0.0)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - SwiftMessages (9.0.6):
+    - SwiftMessages/App (= 9.0.6)
+  - SwiftMessages/App (9.0.6)
+
+DEPENDENCIES:
+  - Cosmos (~> 23.0)
+  - NVActivityIndicatorView
+  - SwiftMessages
+
+SPEC REPOS:
+  trunk:
+    - Cosmos
+    - NVActivityIndicatorView
+    - SwiftMessages
+
+SPEC CHECKSUMS:
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
+
+PODFILE CHECKSUM: 69144e2981bcf42b503ab4b6a4190f4ad3a7228f
+
+COCOAPODS: 1.15.2

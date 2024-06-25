@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FavoriteCollectionViewCell" customModule="QuickMovie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K5c-I9-eIi">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sIJ-zk-rER">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="159.33333333333334"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vYe-60-XrR">
+                                <rect key="frame" x="10" y="164.33333333333334" width="180" height="30.666666666666657"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Evl-SL-XwU">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="16"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqz-gF-1Yo">
+                                        <rect key="frame" x="0.0" y="16" width="180" height="14.666666666666664"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fW6-1F-GGp">
+                                <rect key="frame" x="160" y="119.33333333333331" width="30" height="30"/>
+                                <color key="tintColor" name="PrimaryRed"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ebv-8A-17A"/>
+                                    <constraint firstAttribute="width" constant="30" id="nEX-6j-xZY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sIJ-zk-rER" secondAttribute="trailing" id="6ft-RT-Hjl"/>
+                            <constraint firstAttribute="trailing" secondItem="fW6-1F-GGp" secondAttribute="trailing" constant="10" id="NPB-ii-9xK"/>
+                            <constraint firstItem="vYe-60-XrR" firstAttribute="top" secondItem="sIJ-zk-rER" secondAttribute="bottom" constant="5" id="QrI-ji-QF1"/>
+                            <constraint firstItem="vYe-60-XrR" firstAttribute="leading" secondItem="K5c-I9-eIi" secondAttribute="leading" constant="10" id="S5F-va-8oX"/>
+                            <constraint firstItem="sIJ-zk-rER" firstAttribute="top" secondItem="K5c-I9-eIi" secondAttribute="top" id="STf-OS-8Cm"/>
+                            <constraint firstAttribute="trailing" secondItem="vYe-60-XrR" secondAttribute="trailing" constant="10" id="aVf-BZ-6aE"/>
+                            <constraint firstItem="fW6-1F-GGp" firstAttribute="bottom" secondItem="sIJ-zk-rER" secondAttribute="bottom" constant="-10" id="bBO-KB-j6U"/>
+                            <constraint firstItem="sIJ-zk-rER" firstAttribute="leading" secondItem="K5c-I9-eIi" secondAttribute="leading" id="qWc-oO-66I"/>
+                            <constraint firstAttribute="bottom" secondItem="vYe-60-XrR" secondAttribute="bottom" constant="5" id="xqV-a9-Zbi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="K5c-I9-eIi" secondAttribute="trailing" id="3tO-38-WvT"/>
+                <constraint firstItem="K5c-I9-eIi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5uw-fp-HTN"/>
+                <constraint firstItem="K5c-I9-eIi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UTA-2w-gv4"/>
+                <constraint firstAttribute="bottom" secondItem="K5c-I9-eIi" secondAttribute="bottom" id="Xp6-cV-GPp"/>
+            </constraints>
+            <connections>
+                <outlet property="favoirteImage" destination="fW6-1F-GGp" id="URn-Gw-lf5"/>
+                <outlet property="name" destination="Evl-SL-XwU" id="UZS-32-XXa"/>
+                <outlet property="posterImage" destination="sIJ-zk-rER" id="tQo-Sk-dF6"/>
+                <outlet property="releaseYear" destination="Oqz-gF-1Yo" id="qIr-UQ-Czt"/>
+            </connections>
+            <point key="canvasLocation" x="56.488549618320612" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="PrimaryRed">
+            <color red="0.54900002479553223" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
