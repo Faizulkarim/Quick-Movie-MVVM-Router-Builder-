@@ -15,5 +15,3 @@ Smaller dependency injection objects called `Builders` are used to product fully
 
 When creating a new feature within  Quick Movie, generally there is a structure and file creation order needed in order to keep with the architecture.
 
-
-#### Template Generator
